@@ -1,0 +1,22 @@
+@startuml
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+left to right direction
+skinparam packageStyle rectangle
+actor Customer
+actor Technician
+actor Bank
+rectangle ATM {
+	Customer -- (Withdraw Funds)
+	(Withdraw Funds) -- Bank
+	Customer -- (Deposit Funds)
+	(Deposit Funds) -- Bank
+	Customer -- (View Balance)
+	(View Balance) -- Bank
+	Customer -- (Transfer Funds)
+	(Transfer Funds) -- Bank
+	Technician -- (Update System)
+	(Update System) -- Bank
+  
+@enduml
