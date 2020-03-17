@@ -1,0 +1,25 @@
+@startuml
+
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam classAttributeIconSize 0
+
+title Student Information Class Diagram
+
+class StudentInformation {
+  +name
+  +idNumber
+  +gpa
+  +expectedGraduationYear
+  +currentSchedule
+  +getName()
+  +getIdNumber()
+  +getGpa()
+  +getExpectedGraduationyear()
+  +getCurrentSchedule()
+  +setCurrentSchedule()
+  +setGpa()
+}
+
+@enduml

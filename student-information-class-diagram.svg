@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="242px" preserveAspectRatio="none" style="width:334px;height:242px;" version="1.1" viewBox="0 0 334 242" width="334px" zoomAndPan="magnify"><defs><filter height="300%" id="fkzaq6022xt67" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="320" x="2" y="18.0967">Student Information Class Diagram</text><!--MD5=[969a1fd85ec05d38619ad16a3aa84a6c]
+class StudentInformation--><rect fill="#CCCCCC" filter="url(#fkzaq6022xt67)" height="202.4238" id="StudentInformation" style="stroke: #AAAAAA; stroke-width: 1.5;" width="190" x="67" y="28.876"/><ellipse cx="103" cy="41.876" fill="#1A66C2" rx="8" ry="8" style="stroke: #AAAAAA; stroke-width: 1.0;"/><path d="M105.6875,45.2197 Q105.2656,45.4072 105.0156,45.5322 Q104.7813,45.6416 104.375,45.751 Q104.0313,45.876 103.625,45.9385 Q103.2344,46.0166 102.75,46.0166 Q101.8438,46.0166 101.0781,45.7666 Q100.3281,45.501 99.7813,44.9541 Q99.2344,44.4072 98.9219,43.5791 Q98.625,42.7354 98.625,41.6729 Q98.625,40.6416 98.9063,39.8291 Q99.2031,39.001 99.7656,38.4229 Q100.3125,37.876 101.0625,37.5947 Q101.8281,37.2979 102.75,37.2979 Q103.4375,37.2979 104.0938,37.4697 Q104.7656,37.626 105.6875,38.0791 L105.6875,39.7041 L105.3125,39.7041 Q104.625,39.1104 104,38.876 Q103.375,38.6416 102.6875,38.6416 Q102.125,38.6416 101.6719,38.8291 Q101.2344,39.001 100.8906,39.3916 Q100.5469,39.7354 100.3438,40.3135 Q100.1563,40.8916 100.1563,41.6729 Q100.1563,42.4697 100.375,43.0322 Q100.5938,43.5947 100.9219,43.9541 Q101.2656,44.3135 101.7188,44.4854 Q102.1875,44.6572 102.7031,44.6572 Q103.4219,44.6572 104.0469,44.4229 Q104.6875,44.1729 105.3125,43.6104 L105.6875,43.6104 L105.6875,45.2197 Z "/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="111" x="119" y="46.2507">StudentInformation</text><line style="stroke: #AAAAAA; stroke-width: 1.5;" x1="68" x2="256" y1="54.876" y2="54.876"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="41" x="73" y="69.9351">+name</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="73" y="83.3037">+idNumber</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="73" y="96.6724">+gpa</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="150" x="73" y="110.041">+expectedGraduationYear</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="73" y="123.4097">+currentSchedule</text><line style="stroke: #AAAAAA; stroke-width: 1.5;" x1="68" x2="256" y1="129.7192" y2="129.7192"/><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70" x="73" y="144.7783">+getName()</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="73" y="158.147">+getIdNumber()</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="60" x="73" y="171.5156">+getGpa()</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="73" y="184.8843">+getExpectedGraduationyear()</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="73" y="198.2529">+getCurrentSchedule()</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132" x="73" y="211.6216">+setCurrentSchedule()</text><text fill="#333333" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="73" y="224.9902">+setGpa()</text><!--MD5=[9a0f9bdaced99f0f728953d65efadf4b]
+@startuml
+
+
+
+
+skinparam stereotypeCBackgroundColor 1a66c2
+
+
+
+
+skinparam backgroundColor fff
+
+
+
+
+
+
+
+skinparam circledCharacter {
+  radius 8
+  fontSize 11
+  fontName "Verdana"
+}
+
+skinparam class {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName "Verdana"
+  arrowFontColor 333
+  arrowFontSize 11
+
+  attributeFontColor 333
+  attributeFontSize 11
+  attributeIconSize 11
+}
+
+
+skinparam actor {
+    backgroundColor 2a86e2
+  borderColor 1a66c2
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam participant {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam interface {
+    backgroundColor 2a86e2
+  borderColor 1a66c2
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam component {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam node {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam database {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam queue {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam usecase {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName "Verdana"
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam activity {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName "Verdana"
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam sequence {
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName "Verdana"
+  arrowFontColor 333
+  arrowFontSize 11
+
+  lifeLineBorderColor 000
+  lifeLineBackgroundColor 333
+}
+
+skinparam boundary {
+    backgroundColor 2a86e2
+  borderColor 1a66c2
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam control {
+    backgroundColor 2a86e2
+  borderColor 1a66c2
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam entity {
+    backgroundColor 2a86e2
+  borderColor 1a66c2
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam state {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName "Verdana"
+  arrowFontColor 333
+  arrowFontSize 11
+  startColor 2a86e2
+  endColor 1a66c2
+}
+
+
+skinparam object {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName "Verdana"
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+
+skinparam note {
+    backgroundColor 2a86e2
+  borderColor 1a66c2
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam cloud {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName "Verdana"
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam rectangle {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam storage {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName "Verdana"
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam classAttributeIconSize 0
+
+title Student Information Class Diagram
+
+class StudentInformation {
+  +name
+  +idNumber
+  +gpa
+  +expectedGraduationYear
+  +currentSchedule
+  +getName()
+  +getIdNumber()
+  +getGpa()
+  +getExpectedGraduationyear()
+  +getCurrentSchedule()
+  +setCurrentSchedule()
+  +setGpa()
+}
+
+@enduml
+
+PlantUML version 1.2019.13(Tue Dec 10 12:18:29 EST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.1+9
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
