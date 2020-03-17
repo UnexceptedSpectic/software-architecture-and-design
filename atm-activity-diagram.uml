@@ -1,0 +1,109 @@
+@startuml
+
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+
+title ATM Activity Diagram
+
+|Customer|
+start
+:Insert Card;
+|ATM|
+:Verify Card;
+if (Is Valid?) then (yes)
+	:Request PIN;
+	|Customer|
+	:Enter PIN;
+	|ATM|
+	:Send Number & PIN;
+	|Bank|
+	:Verify PIN;
+	|ATM|
+	if (Correct PIN?) then (yes)
+		:Show Menu;
+		|Customer|
+		:Chooses Option;
+		|ATM|
+		if (Option) then (Deposit)
+			:Request Cash Insertion;
+			|Customer|
+			:Insert Cash;
+			|ATM|
+			:Count Cash;
+			:Send Deposit Request;
+			|Bank|
+			:Deposit Funds;
+			:Return Success;
+			|ATM|
+			:Show Completed;
+			:Return Card;
+			|Customer|
+			stop
+		else
+			|ATM|			
+			if (Withdraw/Transfer?) then (Withdraw)	
+				|ATM|	
+				if (Sufficient Funds?) then (yes)
+					:Withdraw Request;
+					:Request Balance;
+					|Bank|
+					:Return Balance;
+					|ATM|
+					|Bank|
+					:Return Success;
+					|ATM|
+					:Show Completed;
+					:Give Cash;
+					:Return Card;
+					|Customer|
+					:Collect Cash;
+					stop
+				else (no)
+					|ATM|
+					:Show Error;
+					:Return Card;
+					|Customer|
+					stop
+				endif
+			else (Transfer)
+				|ATM|
+				if (Sufficient Funds?) then (yes)
+					:Transfer Request;
+					:Request Balance;
+					|Bank|
+					:Return Balance;
+					|ATM|
+					|Bank|
+					:Return Success;
+					|ATM|
+					:Show Completed;
+					:Return Card;
+					|Customer|
+					stop
+				else (no)
+					|ATM|
+					:Show Error;
+					:Return Card;
+					|Customer|
+					stop
+				endif
+			endif
+		endif
+	else (no)
+		|ATM|
+		:Show Error;
+		:Return Card;
+		|Customer|
+		stop
+	endif
+
+else (no)
+	|ATM|
+	:Return Card;
+	|Customer|
+	stop
+endif
+
+
+@enduml
